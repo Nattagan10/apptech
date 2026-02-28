@@ -1,0 +1,160 @@
+/* ===== Base ===== */
+body {
+  font-family: "Noto Sans Thai", sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #e2e8f0;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #1e3a8a, #6366f1);
+  color: white;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+header p {
+  margin-top: 12px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* ===== Main Layout ===== */
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ===== Stock Card ===== */
+article {
+  background: rgba(30, 41, 59, 0.8);
+  border-radius: 18px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+article:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 15px 35px rgba(99,102,241,0.4);
+  border-color: #6366f1;
+}
+
+article img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 4px 10px rgba(99,102,241,0.5));
+}
+
+article h2 {
+  color: #a5b4fc;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+article p {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+/* ===== Button ===== */
+.open-btn {
+  background: linear-gradient(135deg, #6366f1, #3b82f6);
+  color: white;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(99,102,241,0.4);
+}
+
+.open-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(59,130,246,0.6);
+}
+
+/* ===== Overlay ===== */
+#overlay {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+}
+
+.overlay-box {
+  background: #1e293b;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 420px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+  border: 1px solid rgba(99,102,241,0.3);
+}
+
+.overlay-box h2 {
+  color: #818cf8;
+  margin-bottom: 15px;
+}
+
+.overlay-box a, 
+#closeBtn {
+  display: inline-block;
+  margin: 12px 6px;
+  padding: 12px 22px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#overlayLink {
+  background: linear-gradient(135deg, #6366f1, #3b82f6);
+  color: white;
+}
+
+#closeBtn {
+  background: #334155;
+  color: #e2e8f0;
+  border: 1px solid #475569;
+}
+
+#closeBtn:hover {
+  background: #475569;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #94a3b8;
+  font-size: 0.9rem;
+  background: #0f172a;
+}
